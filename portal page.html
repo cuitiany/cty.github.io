@@ -3,8 +3,63 @@
 <html>
 
 <head>
-  <title>my portal page</title>
+    <meta charset="utf-8">
+    <title>my portal page</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+    body {
+			font-family: Ariel, sans-serif;
+			align-content: center;
+		}
+
+    #container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 0.2fr 1.6fr .2fr;
+			max-width: 75vw;
+			margin: auto;
+		}
+
+    header {
+      max-height: 52.5vh;
+			grid-row: 1;
+			grid-column: 1 / 5;
+			background-color: #557788;
+      padding-top: 1.5rem;
+			padding-left: 0rem;
+			padding-bottom: 0rem;
+      font-size: 1rem;
+		}
+
+    aside {
+			min-height: 30vh;
+			background-color: #B0E0E6;
+			grid-row: 2;
+			grid-column: 1 / 2;
+      padding: 1rem;
+		}
+
+    section {
+			background-color: #add8e6;
+			grid-row: 2;
+			grid-column: 2/ 5;
+      padding: 1rem;
+		}
+
+    footer {
+			background-color: #48D1CC;
+			grid-row: 3;
+			grid-column: 1 / 5;
+			text-align: center;
+			padding: 1rem;
+		}
+    </style>
 </head>
+
 
 <body>
 
@@ -17,9 +72,7 @@
 
     <section>
       <h2>About Me</h2>
-    </section>
 
-    <section>
       <h2>My Work</h2>
       <h3>Projects</h3>
       <ol>
@@ -32,17 +85,15 @@
       <ol>
         <li><a href="https://cuitiany.github.io/cty.github.io/storyremix.html">Exercise 1</a></li>
         <li>Exercise 2</li>
-        <ul>
+        <li><ul>
           <li><a href="https://cuitiany.github.io/cty.github.io/tianyi_cui_ex2markup01.html">Markup1</a></li>
           <li><a href="https://cuitiany.github.io/cty.github.io/tianyi_cui_ex2markup02.html">Markup2</a></li>
           <li><a href="https://cuitiany.github.io/cty.github.io/tianyi_cui_ex2markup03.html">Markup3</a></li>
-        </ul>
+        </ul></li>
         <li><a href="https://cuitiany.github.io/cty.github.io/cui-garcia.html">Exercise 3</a></li>
         <li><a href="https://cuitiany.github.io/cty.github.io/cui_ex4/boxmodel-game.html">Exercise 4</a></li>
+        <li><a href="https://cuitiany.github.io/cty.github.io/ex5.html">Exercise 5</a></li>
       </ol>
-    </section>
-
-    <section>
 
       <h2>Contact</h2>
       <h3>Contact Information</h3>
