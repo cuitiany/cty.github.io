@@ -1,10 +1,11 @@
+
 /*Sets the width of the overall page container div
 to 90% of viewport width and margin:auto centers the page
 in the middle of the browser no matter how wide you stretch the browser*/
 .pagecontainer {
   margin: auto;
   width: auto;
-  background: #ffffff;
+  background-image: url("images/background1.png");
 }
 
 header {
@@ -54,7 +55,7 @@ nav ul li a {
 }
 /*Active psuedoclass is used so When you click on a menu item it turns orange.*/
 nav ul li:active {
-  background: #e9892f;
+  background: #ffaa00;
 }
 
 .locationmarker {
@@ -70,7 +71,7 @@ article {
 }
 
 footer {
-  background: #99ddff;
+  background: #ffaa00;
   padding: 2rem;
   text-align: center;
 }
@@ -80,8 +81,10 @@ footer {
 h2 {
    font-family: 'Poor Story', cursive;
    font-size: 2rem;
+   color: black;
 }
 
 p {
 font-family: 'KoHo', sans-serif;
 font-size: 1rem;
+}
