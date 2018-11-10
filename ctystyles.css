@@ -65,6 +65,10 @@ nav ul li:active {
 /*This class should be applied to html differently on each page to let user know
 which page you are on--in this case the home page*/
 
+article image {
+  width: 20%;
+}
+
 article {
   padding-left: 2rem;
   padding-right: 2rem;
