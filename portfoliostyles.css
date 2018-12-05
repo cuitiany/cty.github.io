@@ -1,0 +1,292 @@
+/*This is the container div where you declare CSS grid display
+and set up how many columns and rows are needed for the image grid.
+You could then go on to position each div on the grid though if
+they are equidistant it is not necessary.
+fr is a fractional, scalable unit for relative portions of the page,
+but you can use other units like pixels too*/
+
+.container {
+  align-items: center;
+}
+
+.image-container-grid {
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-template-rows: .5fr .5fr .5fr;
+  grid-gap: .5rem;
+  width: 80vw;
+  margin: auto;
+}
+
+.image-container-grid1 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: .5fr .5fr .5fr .5fr;
+  grid-gap: .5rem;
+  width: 80vw;
+  margin: auto;
+}
+
+.image-container-grid2 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: .5fr .5fr .5fr;
+  grid-gap: .5rem;
+  width: 80vw;
+  margin: auto;
+}
+
+.image-container-grid3 {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: .5fr .5fr .5fr .5fr .5fr;
+  grid-gap: .5rem;
+  width: 80vw;
+  margin: auto;
+}
+
+.imagebox {
+  background: #ffcc33;
+}
+
+img {
+  width: 100%;
+}
+
+
+  /*style of content*/
+nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  list-style-type: none;
+  background-color: white;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 0em;
+  margin-top: 0em;
+  padding-left: .5em;
+  align-items: flex-end;
+}
+
+nav ul li {
+  height: 1.5rem;
+  width: 4rem;
+  padding-top: 5rem;
+  text-align: left;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: .6em;
+  color: black;
+}
+
+
+  .locationmarker {
+  font-weight: 900;
+  }
+
+header {
+  background-image: url("image/home.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: 15em;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+  padding-bottom: 1em;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-decoration: none;
+  font-family: 'Noto Sans SC', sans-serif;
+  color: white;
+}
+
+h2 {
+  text-decoration: none;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 1em;
+  color: black;
+  text-align: center;
+}
+
+
+article {
+  background-image: url("image/bgi1.gif");
+  background-repeat: repeat;
+  background-size: 18% auto;
+  text-decoration: none;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: .8em;
+  color: black;
+  padding: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+
+aside {
+  background-image: url("image/bgi1.gif");
+  background-repeat: repeat;
+  background-size: 18% auto;
+  text-decoration: none;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: .8em;
+  padding: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+}
+
+footer {
+  font-family: 'Noto Sans SC', sans-serif;
+  padding: 2em;
+  text-align: center;
+  font-size: 0.8em;
+  color: black;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/*****Responsive for Larger Screens*******/
+@media only screen and (min-width: 900px)  {
+/*sets the header image to full screen width*/
+
+.image-container-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: .5fr;
+  grid-gap: .5rem;
+  width: 80vw;
+  margin: auto;
+}
+
+.image-container-grid1 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: .5fr .5fr;
+  grid-gap: .5rem;
+  width: 80vw;
+  margin: auto;
+}
+
+.image-container-grid2 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: .5fr .5fr;
+  grid-gap: .5rem;
+  width: 80vw;
+  margin: auto;
+}
+
+.image-container-grid3 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: .5fr .5fr .5fr;
+  grid-gap: .5rem;
+  width: 80vw;
+  margin: auto;
+}
+
+.imagebox {
+  background: white;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+header {
+  background-image: url("images/home.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 40em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 0em;
+  text-align: center;
+  padding-bottom: 1em;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5em;
+  text-decoration: none;
+  font-family: 'Noto Sans SC', sans-serif;
+  color: white;
+}
+
+h2 {
+  text-decoration: none;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 1.5em;
+  color: black;
+}
+
+
+  /*sets the nav bar with flex box to be horizontal if enough width*/
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    list-style-type: none;
+    background-color: white;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    padding-left: .5em;
+    align-items: flex-end;
+  }
+/*sets width of nav list items*/
+nav ul li {
+  height: 1.5rem;
+  width: 6rem;
+  padding-top: 5rem;
+  text-align: left;
+  padding-bottom: 0em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: .8em;
+  color: black;
+  padding-bottom: 0em;
+}
+
+
+  .locationmarker {
+  font-weight: 900;
+  }
+
+  aside {
+    background-image: url("image/bgi1.gif");
+    background-repeat: repeat;
+    background-size: 18% auto;
+    text-decoration: none;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: .8em;
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+  }
+
+  footer {
+    font-family: 'Noto Sans SC', sans-serif;
+    padding: 2em;
+    text-align: center;
+    font-size: 0.8em;
+    color: black;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
