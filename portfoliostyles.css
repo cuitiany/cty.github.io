@@ -130,21 +130,6 @@ article {
   margin-right: 1em;
 }
 
-section {
-  padding-left: 4em;
-  padding-right: 4em;
-  margin-left: 1em;
-  margin-right: 1em;
-  background-image: url("image/bgi1.gif");
-  background-repeat: repeat;
-  background-size: 18% auto;
-  text-decoration: none;
-  line-height: 2em;
-  font-family: 'Noto Sans SC', sans-serif;
-  font-size: .8em;
-  color: black;
-  padding: 1em;
-}
 
 aside {
   background-image: url("image/bgi1.gif");
