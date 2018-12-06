@@ -126,6 +126,8 @@ article {
   font-size: .8em;
   color: black;
   padding: 1em;
+  padding-left: 4em;
+  padding-right: 4em;
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -142,6 +144,7 @@ aside {
   margin-left: 1em;
   margin-right: 1em;
   text-align: center;
+  line-height: 2em;
 }
 
 footer {
@@ -152,6 +155,7 @@ footer {
   color: black;
   margin-left: 1em;
   margin-right: 1em;
+  line-height: 2em;
 }
 
 /*****Responsive for Larger Screens*******/
@@ -279,6 +283,7 @@ nav ul li a {
     margin-left: 1em;
     margin-right: 1em;
     text-align: center;
+    line-height: 2em;
   }
 
   footer {
@@ -289,5 +294,6 @@ nav ul li a {
     color: black;
     margin-left: 1em;
     margin-right: 1em;
+    line-height: 2em;
   }
 }
