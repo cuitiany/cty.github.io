@@ -121,6 +121,7 @@ article {
   background-repeat: repeat;
   background-size: 18% auto;
   text-decoration: none;
+  line-height: 2em;
   font-family: 'Noto Sans SC', sans-serif;
   font-size: .8em;
   color: black;
