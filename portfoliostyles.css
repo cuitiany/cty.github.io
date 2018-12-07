@@ -9,6 +9,15 @@ but you can use other units like pixels too*/
   align-items: center;
 }
 
+.image-container-grid0 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: .5rem;
+  width: 50vw;
+  margin: auto;
+}
+
 .image-container-grid {
   display: grid;
   grid-template-columns: 4fr;
@@ -119,7 +128,7 @@ h2 {
 article {
   background-image: url("image/bgi1.gif");
   background-repeat: repeat;
-  background-size: 18% auto;
+  background-size: 15% auto;
   text-decoration: none;
   line-height: 2em;
   font-family: 'Noto Sans SC', sans-serif;
@@ -128,19 +137,21 @@ article {
   padding: 1em;
   margin-left: 1em;
   margin-right: 1em;
+  margin-top: 3em;
+  margin-bottom: 0em;
 }
 
 
 aside {
-  background-image: url("image/bgi1.gif");
-  background-repeat: repeat;
-  background-size: 18% auto;
   text-decoration: none;
   font-family: 'Noto Sans SC', sans-serif;
   font-size: .8em;
   padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
   margin-left: 1em;
   margin-right: 1em;
+  margin-top: 0em;
   text-align: center;
   line-height: 2em;
 }
@@ -159,6 +170,15 @@ footer {
 /*****Responsive for Larger Screens*******/
 @media only screen and (min-width: 900px)  {
 /*sets the header image to full screen width*/
+
+.image-container-grid0 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: .5rem;
+  width: 30vw;
+  margin: auto;
+}
 
 .image-container-grid {
   display: grid;
@@ -270,11 +290,7 @@ nav ul li a {
   font-weight: 900;
   }
 
-  section {
-    padding-left: 4em;
-    padding-right: 4em;
-    margin-left: 1em;
-    margin-right: 1em;
+  article {
     background-image: url("image/bgi1.gif");
     background-repeat: repeat;
     background-size: 18% auto;
@@ -284,16 +300,18 @@ nav ul li a {
     font-size: .8em;
     color: black;
     padding: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   aside {
-    background-image: url("image/bgi1.gif");
-    background-repeat: repeat;
-    background-size: 18% auto;
     text-decoration: none;
     font-family: 'Noto Sans SC', sans-serif;
     font-size: .8em;
-    padding: 1em;
+    padding-top: 0em;
+    padding-left: 10em;
+    padding-right: 10em;
     margin-left: 1em;
     margin-right: 1em;
     text-align: center;
